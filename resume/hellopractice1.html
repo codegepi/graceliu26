@@ -1,0 +1,181 @@
+<!-- <!DOCTYPE html> -->
+<html>
+	<head>
+	<title> Grace's Awesome Resume</title>
+		<style>
+			#header{
+				width: 100%;
+				overflow: hidden;
+			}
+
+			#header-profile-picture{
+				/*width: 30%;*/
+				float: left;
+				text-align: right;
+			}
+
+			#header-background-picture{
+				
+				/*width: 70%;*/
+				background: url("balloons.jpg");
+	    		background-repeat: no-repeat;
+	    		background-size: 100%;
+	    		width:1000px;
+	    		height:426px;
+				float: left;
+				vertical-align: bottom;
+	    		color: white;
+	    		text-shadow: 2px 2px black;
+
+			}
+
+			#header-profile-picture img{
+				width: 320px;
+				height: auto;				
+			}
+
+			#title{
+				float: left;
+				padding-left: 20px;
+				padding-top: 150px;
+			}
+
+			img#bal{
+			    width: 1000px;
+			    height: 426px;
+			}
+
+			.section-header{
+				background:aliceblue;
+				padding: 10px 5px
+
+			}
+
+			.like {
+				border: 2px dotted;
+				margin-top: 5px;
+				padding-left: 5px;
+			}
+
+			.subtitle{
+				font-weight:bold;
+			}
+
+			h2{
+				margin: 0
+			}
+
+		</style>
+
+		<script type="text/javascript" src="jquery.js">
+		</script>
+
+	</head>
+	<body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#submit").click(function(e){
+				e.preventDefault();
+				alert("you know you love it!");
+			})
+		});
+	</script>
+
+	<div id="header"> 
+		
+		<div id="header-profile-picture">
+			<img id="pap" src="grace_profile_pic.jpg">
+		</div>
+
+
+		<div id="header-background-picture"> 
+			<div id="title">
+			<h1><b>Grace Liu</b></h1>
+			<h1><i> It's all about transforming lives and building community</i></h1>
+			</div>
+			
+			<!-- <img id="bal" src="balloons.jpg"> -->
+	
+		</div>
+	</div>		
+
+		<div id="education" class="section">
+			<div class="section-header"><H2>EDUCATION</H2></div>
+
+			<span class="subtitle"> University of Michigan (2004-2008) </span>
+			<ul>
+				<li> B.S. Biology</li>
+				<li> B.S. Anthropology Zoology</li>
+			</ul>
+			<span class="subtitle"> Sekolah Pelita Harapan Year (2000-2004) </span>
+			<ul>
+				<li>International Baccauleate Diploma </li>
+			</ul>
+		</div>
+		
+		<div id="work" class="section">
+			<div class="section-header"><H2>WORK EXPERIENCE</H2></div>
+			<span class="subtitle">Siloam Hospitals (2008-2011)</span>
+			<ul>
+				<li>Business Analyst</li>
+			</ul>	
+
+			<span class="subtitle">Sekolah Pelita Harapan Year (2000-2004) </span>
+			<ul>
+				<li>International Baccauleate Diploma </li>
+			</ul>
+			<ul>
+				<li>Sekolah Pelita Harapan (2011-2014)</li>
+			</ul> 
+
+		</div>
+		<div id="language" class="section">
+			<div class="section-header"><H2>LANGUAGE</H2></div>
+			<ul>
+				<li>English</li>
+				<li>Indonesian</li>
+				<li>Chinese</li>
+			</ul>			
+		</div>
+
+		<div id="hobbies" class="section">
+			<div class="section-header"><H2>HOBBIES</H2></div>
+			<ul>
+				<li>Chilling with friends</li>
+				<li>Drinking Boba</li>
+				<li>Connecting People</li>
+				<li>Building Communities</li>					
+		</div>
+
+		<div id="other" class="section">
+			<div class="section-header"><H2>OTHER EXPERIENCE</H2></div>
+			<ul>
+				<li>Lifegroup Leader (2012-now)</li>
+			</ul>			
+		</div>
+
+		<div class="like">
+			<p>Thanks for viewing my site!</p>
+			<p>Please fill in you contact number?</p>
+			<form action="action">
+		    <input type="text" name="input1" placeholder= "name"> </br>
+		    <input type="email" placeholder="email"> </br>
+			  <p>How much to you love my site?</p>
+			  <select name="rating">
+	        <option value="alot">ALOT</option>
+	        <option value="looksgreat">Looks great</option>
+	        <option value="alright"> Alright</option>
+	        <option value="meh">Meh</option>
+			  </select><br>
+		     <input id="submit" type="Submit">
+
+			</form>
+		</div>
+			<a href="http://www.instagram.com/gsliu">My Instagram</a><br>
+			<a href="http://www.gepi.co">Visit GEPI!</a>
+	
+
+
+	</body>
+</html>
