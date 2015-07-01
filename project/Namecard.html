@@ -1,0 +1,89 @@
+<!-- <<!DOCTYPE html> -->
+<html>
+<head>
+	<title>Making a Name Card</title>
+	
+	<style>
+	.blue {
+		background-color: antiquewhite
+	}
+	</style>
+
+</head>
+<body>
+	<div>
+	<form>
+			<fieldset class="blue">
+				<input id="firstname" type="text" placeholder="First Name"><br/>
+				<input id="lastname" type="text" placeholder="Last Name"><br/>
+				<input id="address" type="text" placeholder="Address"><br/>
+				<input id="birthdate" type="text" placeholder="Birthdate"><br/>
+				<input id="submit"	type="submit"> <br>
+			</fieldset>
+		</form>
+	</div>
+
+	<div class="blue">
+		<table>
+			<tr>
+				<td><b>Name Card</td>
+			</tr>
+			<tr>
+				<td class="firstClass"></td>
+			<tr>
+				<td class="lastClass"></td>
+			</tr>
+			<tr>
+				<td class="addressClass"></td>
+			</tr>
+			<tr>
+				<td class="birthdateClass"></td>
+			</tr>
+		</table>
+	</div>
+
+
+
+		<script type="text/javascript" src="jquery.js"></script>
+		 <script type="text/javascript">
+			$(document).ready(function(){
+					
+				$('#submit').click(function(){
+					var first = $("#firstname").val();
+					var last = $("#lastname").val();
+					var address = $("#address").val();
+					var birthdate = $("#birthdate").val();
+
+
+					if($("#firstname").val() === ""){
+						alert("please fill in your first name");
+					} else if($("#lastname").val() === ""){
+						alert("please fill in your last name");
+					} else if($("#address").val() === ""){
+						alert("please fil in your address");
+					} else if($("#birthdate").val() === ""){
+						alert("please fill in your birthdate");
+					} else {
+						
+						$(".firstClass").append(first);
+						$(".lastClass").append(lastname);
+						$(".addressClass").append(address);
+						$(".birthdateClass").append(birthdate);
+						// alert("complete");
+					}
+
+					return false;
+				});
+
+			});
+
+
+
+		 </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+	<title>Making Stars</title>
+</head>
+<body>
+<div>
+	<form>
+		<fieldset>
+			<input id="myStars" type="number" value="">
+			<input type="submit" id="mystarsubmit">
+		</fieldset>
+	</form>
+	<p id="output"></p>
+</div>
+
+
+<div id="mystarsprint">
+
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript">
+
+	$(document).ready(function(){
+	    $('#mystarsubmit').click(function(){
+	    	var x = $('#myStars').val();
+	    	var textStars = "";
+
+	    	for (i=0; i<x; i++){
+		    	for(j=0;j<=i;j++){
+		    		textStars += "*"
+		    	};
+		    	textStars += "<br/>"
+	    	};
+		    $("#mystarsprint").html(textStars);
+		    return false;
+	    });
+
+	});
+
+</script>
+</body>
+</html>
