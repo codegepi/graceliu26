@@ -2,8 +2,18 @@
 <html>
 <head>
 	<title>Making a Name Card</title>
+	<style type="text/css">
+		fieldset {
+			background-color: antiquewhite;
+		}
+
+		#data {
+			width: 200px;
+		}
+	</style>
 </head>
 <body>
+Please put in your information:
 	<form>
 		<fieldset>
 			<input id="firstname" type="text" placeholder="First Name"><br/>
@@ -16,27 +26,27 @@
 
 
 
-	<table border="solid">
+	<table id="data" border="solid">
 		<tr>
 			<td>Name Card</td>
 		</tr>
 		<tr>
-			<td class="firstClass"></td>
+			<td class="firstClass">&nbsp;</td>
 		<tr>
-			<td class="lastClass"></td>
+			<td class="lastClass">&nbsp;</td>
 		</tr>
 		<tr>
-			<td class="addressClass"></td>
+			<td class="addressClass">&nbsp;</td>
 		</tr>
 		<tr>
-			<td class="birthdateClass"></td>
+			<td class="birthdateClass">&nbsp;</td>
 		</tr>
 	</table>
 
 
 
 
-		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
 		 <script type="text/javascript">
 			$(document).ready(function(){
 					
@@ -58,7 +68,7 @@
 					} else {
 						
 						$(".firstClass").append(first);
-						$(".lastClass").append(lastname);
+						$(".lastClass").append(last);
 						$(".addressClass").append(address);
 						$(".birthdateClass").append(birthdate);
 						// alert("complete");
