@@ -2,15 +2,10 @@
 <html>
 <head>
 	<title>Making a Name Card</title>
-	<style type="text/css">
-		fieldset {
-			background-color: antiquewhite;
-		}
-
-		#data {
-			width: 200px;
-		}
-	</style>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet"	type="text/css"	href="css/app.css">
 </head>
 <body>
 Please put in your information:
@@ -42,48 +37,9 @@ Please put in your information:
 			<td class="birthdateClass">&nbsp;</td>
 		</tr>
 	</table>
-
-
-
-
-		<script type="text/javascript" src="js/jquery.js"></script>
-		 <script type="text/javascript">
-			$(document).ready(function(){
-					
-				$('#submit').click(function(){
-					var first = $("#firstname").val();
-					var last = $("#lastname").val();
-					var address = $("#address").val();
-					var birthdate = $("#birthdate").val();
-
-
-					if($("#firstname").val() === ""){
-						alert("please fill in your first name");
-					} else if($("#lastname").val() === ""){
-						alert("please fill in your last name");
-					} else if($("#address").val() === ""){
-						alert("please fil in your address");
-					} else if($("#birthdate").val() === ""){
-						alert("please fill in your birthdate");
-					} else {
-						
-						$(".firstClass").append(first);
-						$(".lastClass").append(last);
-						$(".addressClass").append(address);
-						$(".birthdateClass").append(birthdate);
-						// alert("complete");
-					}
-
-					return false;
-				});
-
-			});
-
-
-
-		 </script>
-
-
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 
 
 
